@@ -1,0 +1,100 @@
+body {
+  /* background-image: url("https://images.unsplash.com/photo-1599992836360-f88e279f8350?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGRhcmslMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"); */
+  background-color: rgb(32, 36, 33);
+  color: #eef0ea;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 90px;
+  font-size: 35px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0 40px 40px 40px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+    color: #eef0ea;
+}
+
+
+.navbar {
+  background-color: darkolivegreen;
+  color: whitesmoke;
+  display: flex;
+  float: left;
+  align-items: center;
+  position: fixed;
+  box-shadow: 1px 2px 1px;
+  width: 100%;
+}
+
+.navbar a {
+  color: whitesmoke;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .types {
+  display: block;
+  color: whitesmoke;
+  padding: 0 24px;
+  font-size: 24px;
+}
+
+.navbar ul li a {
+  color: whitesmoke;
+  padding: 24px;
+  display: block;
+}
+
+.navbar ul a:hover,
+.navbar ul a:focus {
+  background-color: gray;
+}
+
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 20%;
+}
+
+figure {
+  border: none;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font-family: Garamond, serif;
+  padding: 3px;
+  text-align: left;
+}
+
