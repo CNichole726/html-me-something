@@ -96,7 +96,7 @@ figure {
   flex-flow: column;
   padding: 4px; 
   max-width: 150px;
-  max-height: 150px;
+  height: auto;
   margin: auto;
 }
 
