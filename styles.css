@@ -7,7 +7,6 @@ body {
 
 h1 {
   text-align: center;
-  padding-top: 90px;
   font-size: 35px;
 }
 
@@ -19,74 +18,84 @@ p {
 
 h2 {
   text-align: center;
-  padding-bottom: 20px;
 }
 
 a {
   text-decoration: none;
 }
 
-footer {
-    color: #eef0ea;
-}
-
-
-.navbar {
-  background-color: darkolivegreen;
-  color: whitesmoke;
-  display: flex;
-  float: left;
-  align-items: center;
-  position: fixed;
-  box-shadow: 1px 2px 1px;
-  width: 100%;
-}
-
-.navbar a {
-  color: whitesmoke;
-}
-
-.navbar ul {
-  margin: 0;
-  padding: 0;
+nav ul {
   list-style-type: none;
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  overflow: auto;
+  padding-left: 0;
 }
 
-.navbar .types {
+.logo {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  padding-top: 70px;
+}
+ .navbar-fixed .logo {
+   float: left;
+ }
+
+.navbar-fixed {
+  background-color: darkolivegreen;
   color: whitesmoke;
-  padding: 0 24px;
-  font-size: 24px;
+  box-shadow: 1px 2px 1px;
+  width: 100%;
+  overflow: auto;
+  position: fixed;
+  text-align: left;
+  margin: 0;
 }
 
-.navbar ul li a {
+.navbar-fixed .types {
   color: whitesmoke;
-  padding: 24px;
-  display: block;
 }
 
-.navbar ul a:hover,
-.navbar ul a:focus {
+.navbar-fixed ul a:hover,
+.navbar-fixed ul a:focus {
   background-color: gray;
 }
 
 
+@media screen and (max-width: 500px) {
+  .navbar-fixed ul {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .logo {
+    padding-top: 110px;
+  }
+}
+
 .row {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    justify-content: space-evenly;
 }
 
 .column {
-    flex: 20%;
+    /* flex: 20%; */
+    padding: 5px;
 }
 
 figure {
   border: none;
   display: flex;
   flex-flow: column;
-  padding: 5px;
-  max-width: 220px;
+  padding: 4px; 
+  max-width: 150px;
   margin: auto;
 }
 
@@ -98,3 +107,7 @@ figcaption {
   text-align: left;
 }
 
+footer {
+  display: block;
+  padding-top: 40px;
+}
