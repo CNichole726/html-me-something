@@ -97,6 +97,7 @@ figure {
   padding: 4px; 
   max-width: 150px;
   margin: auto;
+  box-shadow: 12px -10px 2px white;
 }
 
 figcaption {
